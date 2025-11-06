@@ -15,7 +15,7 @@ class HostHandler(http.server.SimpleHTTPRequestHandler):
         data = json.loads(post_data.decode('utf-8'))
         input_data = data.get('input', 0)
 
-        # 输出总是+10（无随机故障，让用户通过输入控制故障）
+        # 输出总是+10
         output = input_data + 10
 
         response = json.dumps({'input': input_data, 'output': output})
