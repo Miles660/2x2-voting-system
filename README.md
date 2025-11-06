@@ -2,7 +2,7 @@
 # 2x2-Voting-System: 单机容器实现“二乘二取二系统表决”
 [![Docker Pulls](https://img.shields.io/docker/pulls/milo648/2x2-voting-system)](https://hub.docker.com/r/milo648/2x2-voting-system)
 [![GitHub Stars](https://img.shields.io/github/stars/Miles660/2x2-voting-system)](https://github.com/Miles660/2x2-voting-system)
-[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+
 
 ---
 
