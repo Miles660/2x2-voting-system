@@ -1,0 +1,32 @@
+
+services:
+  channel1-task:
+    build: .
+    networks:
+      - voting_net
+  channel1-vote:
+    build: .
+    networks:
+      - voting_net
+  channel2-task:
+    build: .
+    networks:
+      - voting_net
+  channel2-vote:
+    build: .
+    networks:
+      - voting_net
+  coordinator:
+    build: .
+    command: python coordinator.py
+    networks:
+      - voting_net
+    depends_on:
+      - channel1-task
+      - channel1-vote
+      - channel2-task
+      - channel2-vote
+    stdin_open: true    # 关键：开启标准输入
+    tty: true            # 关键：分配伪终端
+networks:
+  voting_net:
