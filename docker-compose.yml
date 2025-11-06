@@ -26,7 +26,7 @@ services:
       - channel1-vote
       - channel2-task
       - channel2-vote
-    stdin_open: true    # 关键：开启标准输入
-    tty: true            # 关键：分配伪终端
+    stdin_open: true    # 开启标准输入
+    tty: true            # 分配伪终端
 networks:
   voting_net:
