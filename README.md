@@ -34,7 +34,7 @@ docker attach 2x2_voting_system_coordinator_1
 textEnter input for channel1-task: 42
 Enter input for channel1-vote: 42
 Enter input for channel2-task: 50
-Enter input for channel2-vote: 51  ( 不一致！)
+Enter input for channel2-vote: 51  (不一致!)
 
 输出：
 textChannel 1: Pass
